@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doodle Classifier</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-200 flex flex-col items-center justify-center">
+    <script src="script.js"></script>
+
+    <section class="bg-orange-400 border-b-2 border-white shadow-lg w-full">
+      <div
+        class="flex flex-row justify-between items-center w-full max-w-5xl mx-auto h-16 px-4"
+      >
+        <h1 class="text-[2.1rem] font-bold text-white" style="text-shadow: 1px 1px 0 #0000008e, -1px -1px 0 #0000008e, -1px 1px 0 #0000008e, 1px -1px 0 #0000008e;">Sketch-Net</h1>
+
+        <div class="flex flex-row space-x-2">
+          <button
+            id="clearBtn"
+            class="px-2 py-2 border-2 border-white bg-blue-500 text-white rounded hover:bg-blue-600 transition flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mx-auto"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.31-.42 2.52-1.13 3.5l1.46 1.46C19.35 15.35 20 13.74 20 12c0-4.42-3.58-8-8-8zm-6.87 2.5L3.67 5.04C2.65 6.48 2 8.09 2 10c0 4.42 3.58 8 8 8v3l4-4-4-4v3c-3.31 0-6-2.69-6-6 0-1.31.42-2.52 1.13-3.5z"
+              />
+            </svg>
+          </button>
+          <button
+            id="clearBtn"
+            class="px-2 py-2 border-2 border-white  bg-green-500 text-white rounded hover:bg-green-600 transition flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mx-auto"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v2h-2zm0 4h2v6h-2z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex max-w-6xl text-center">
+      <div id="results" class="mt-8 text-lg text-gray-700"></div>
+    </section>
+  </body>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    body {
+      @apply bg-gray-300;
+    }
+
+    h1 {
+      font-family: "Lobster", serif;
+      font-style: normal;
+    }
+  </style>
+</html>
