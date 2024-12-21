@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch-Net</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section
+      class="bg-orange-400 border-b-2 border-white shadow-lg w-full h-16"
+    >
+      <div
+        class="flex flex-row justify-between items-center w-full max-w-5xl mx-auto h-full"
+      >
+        <div class="flex flex-row justify-between items-center gap-2 px-4">
+          <button onclick="window.history.back()" class="text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button></button>
+          <p class="text-white text-xl font-bold">
+            Core Features of Sketch-Net
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="w-full max-w-5xl mx-auto h-full px-4">
+      <article class="mt-2 lg:flex flex-row flex-row-reverse">
+        <div>
+          <h2 class="my-2 lg:ml-4 font-bold text-lg">What is Sketch-Net?</h2>
+          <p class="my-2 lg:ml-4">
+            Sketch-net is a doodle classifier based on a large dataset of
+            doodles using a Convolutional Neural Network (CNN) called
+            <a
+              href="https://github.com/yining1023/doodleNet"
+              class="text-blue-500 underline"
+              >DoodleNet</a
+            >
+            which is trained with the
+            <a
+              href="https://github.com/googlecreativelab/quickdraw-dataset"
+              class="text-blue-500 underline"
+              >quickdraw-dataset</a
+            >
+            of Google (a collection of 50 million drawings).
+          </p>
+
+          <p class="my-2 lg:ml-4">
+            Thanks to
+            <a href="https://ml5js.org/" class="text-blue-500 underline"
+              >ml5.js</a
+            >
+            , a JavaScript library built on TensorFlow.js that simplifies
+            machine learning, making it accessible for creative projects, data
+            analysis, and interactive experiences. It abstracts the complexity
+            of machine learning, allowing easy integration into web
+            applications.
+          </p>
+
+          <p class="my-2 lg:ml-4">
+            Finally,
+            <a href="https://p5js.org/" class="text-blue-500 underline"
+              >p5.js</a
+            >
+            for creating an interactive drawing canvas and handling user input.
+          </p>
+        </div>
+        <img
+          src="../assets/doodleNet_345.gif"
+          alt=""
+          class="mt-2 border-2 border-white p-2 lg:max-w-[38%]"
+        />
+      </article>
+
+      <article class="mt-4 mb-2 lg:flex flex-row">
+        <div>
+          <h2 class="my-2 lg:mr-4 font-bold text-lg">
+            What is a Convolutional Neural Network?
+          </h2>
+          <p class="my-2 lg:mr-4">
+           A <a href="https://www.ibm.com/think/topics/convolutional-neural-networks" class="text-blue-500 underline">Convolutional Neural Network (CNN)</a> is a type of deep learning
+            model commonly used for processing data that has a grid-like
+            structure, such as images. CNNs are especially effective for tasks
+            like image classification, object detection, and facial recognition.
+          </p>
+          <p class="my-2 lg:mr-4">The main layers of a Convolutional Neural Network (CNN) are the Convolutional Layer, Activation Layer (ReLU), Pooling Layer, Fully Connected Layer, and Output Layer.</p>
+         
+        </div>
+        <img
+          src="../assets/machine.gif"
+          alt=""
+          class="mt-2 border-2 border-white p-2 lg:max-w-[38%]"
+        />
+      </article>
+    </div>
+  </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    body {
+      background-color: #e2e8f0; 
+      font-family: "Open Sans", serif;
+    }
+  </style>
+</html>
