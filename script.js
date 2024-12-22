@@ -14,6 +14,11 @@ function setup() {
   clearButton = select("#clearBtn");
   clearButton.mousePressed(clearCanvas);
   resultsDiv = select("#results");
+
+  // Prevent page reload on mobile touch events
+  canvas.touchStarted(preventDefault);
+  canvas.touchMoved(preventDefault);
+  canvas.touchEnded(preventDefault);
 }
 
 function windowResized() {
@@ -60,4 +65,9 @@ function gotResult(error, results) {
 
   canvas.position((windowWidth - width) / 2, ((windowHeight - height) / 2) + 25);
   classifier.classify(canvas, gotResult);
+}
+
+// Prevent default behavior for touch events
+function preventDefault() {
+  return false;
 }
