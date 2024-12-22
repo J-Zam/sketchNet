@@ -38,12 +38,14 @@
             <a
               href="https://github.com/yining1023/doodleNet"
               class="text-blue-500 underline"
+              target="_blank"
               >DoodleNet</a
             >
             which is trained with the
             <a
               href="https://github.com/googlecreativelab/quickdraw-dataset"
               class="text-blue-500 underline"
+              target="_blank"
               >quickdraw-dataset</a
             >
             of Google (a collection of 50 million drawings).
@@ -51,7 +53,7 @@
 
           <p class="my-2 lg:ml-4">
             Thanks to
-            <a href="https://ml5js.org/" class="text-blue-500 underline"
+            <a href="https://ml5js.org/" target="_blank" class="text-blue-500 underline"
               >ml5.js</a
             >
             , a JavaScript library built on TensorFlow.js that simplifies
@@ -63,7 +65,7 @@
 
           <p class="my-2 lg:ml-4">
             Finally,
-            <a href="https://p5js.org/" class="text-blue-500 underline"
+            <a href="https://p5js.org/" target="_blank" class="text-blue-500 underline"
               >p5.js</a
             >
             for creating an interactive drawing canvas and handling user input.
@@ -71,7 +73,7 @@
         </div>
         <img
           src="../assets/doodleNet_345.gif"
-          alt=""
+          alt="cnn image"
           class="mt-2 border-2 border-white p-2 lg:max-w-[38%]"
         />
       </article>
@@ -82,7 +84,7 @@
             What is a Convolutional Neural Network?
           </h2>
           <p class="my-2 lg:mr-4">
-           A <a href="https://www.ibm.com/think/topics/convolutional-neural-networks" class="text-blue-500 underline">Convolutional Neural Network (CNN)</a> is a type of deep learning
+           A <a href="https://www.ibm.com/think/topics/convolutional-neural-networks" target="_blank" class="text-blue-500 underline">Convolutional Neural Network (CNN)</a> is a type of deep learning
             model commonly used for processing data that has a grid-like
             structure, such as images. CNNs are especially effective for tasks
             like image classification, object detection, and facial recognition.
@@ -92,10 +94,58 @@
         </div>
         <img
           src="../assets/machine.gif"
-          alt=""
+          alt="cnn image"
           class="mt-2 border-2 border-white p-2 lg:max-w-[38%]"
         />
       </article>
+
+      <article class="mt-4 mb-2 lg:flex flex-row flex-row-reverse">
+        <div>
+          <h2 class="my-2 lg:ml-4 font-bold text-lg">
+            How CNNs interpret images?
+          </h2>
+          <p class="my-2 lg:ml-4">
+            when you draw on the canvas, the CNN interprets the pixels by applying a series of convolutional filters to detect features, 
+            then applies pooling to reduce dimensionality, and finally uses fully connected layers to classify the doodle. The CNN has 
+            learned to recognize important patterns in the pixel data, and by feeding it the right preprocessed image, it can predict 
+            the content of the doodle with high accuracy. The better the CNN is trained on diverse doodles, the more accurate it will 
+            be in interpreting new drawings.
+          </p>
+         
+        </div>
+        <img
+          src="../assets/convlayer_detailedview_demo.gif"
+          alt="cnn image"
+          class="mt-2 border-2 border-white p-2 lg:max-w-[38%]"
+        />
+      </article>
+
+      <hr>
+
+      <article class="mt-4 mb-2">
+        <div>
+          <h2 class="my-2 font-bold text-lg">
+            More about Convolutional Neural Networks
+          </h2>
+
+      <ul class="list-disc pl-5">
+        <li>
+          <a href="https://www.youtube.com/watch?v=QzY57FaENXg" class="text-blue-500 underline" target="_blank">What are Convolutional Neural Networks (CNNs)?</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=pqY_Tn2SIVA" class="text-blue-500 underline" target="_blank">5.1: Doodle Classifier: Introduction - Intelligence and Learning</a>
+        </li>
+        <li>
+          <a href="https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/courseware/Week8/convolutional_neural_networks/?activate_block_id=block-v1%3AMITx%2B6.036%2B1T2019%2Btype%40sequential%2Bblock%40convolutional_neural_networks" class="text-blue-500 underline" target="_blank">Lecture: CNNs - convolutional neural networks MIT</a>
+        </li>
+        <li>
+          <a href="https://medium.com/thedeephub/convolutional-neural-networks-a-comprehensive-guide-5cc0b5eae175" class="text-blue-500 underline" target="_blank">Convolutional Neural Networks: A Comprehensive Guide</a>
+        </li>
+            </ul>
+        </div>
+      
+      </article>
+
     </div>
   </body>
   <style>
